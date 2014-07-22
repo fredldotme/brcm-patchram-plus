@@ -1,0 +1,19 @@
+Name: brcm-patchram-plus
+Summary: Tool to patch Broadcom Bluetooth chips.
+Description: 
+    This program downloads a patchram files in the HCD format to Broadcom Bluetooth based silicon and combo chips and and other utility functions.
+Version: 0.1.1
+Release: 1
+Group: System/Base
+License: Apache
+Sources:
+    - "%{name}_%{version}.tar.gz"
+Configure: none
+Builder: none
+Requires:
+    - glibc
+PkgBR:
+    - gcc
+    - glibc
+Files:
+    - "%{_sbindir}/brcm_patchram_plus"
