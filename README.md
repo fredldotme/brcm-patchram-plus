@@ -11,7 +11,7 @@ SPEC=$PKG
 cd $MER_ROOT/devel/mer-hybris
 git clone https://github.com/beidl/$PKG.git
 cd $PKG
-mb2 -s $SPEC.spec -t $VENDOR-$DEVICE-armv7hl build
+mb2 -s rpm/$SPEC.spec -t $VENDOR-$DEVICE-armv7hl build
 mkdir -p $ANDROID_ROOT/droid-local-repo/$DEVICE/$PKG/
 rm -f $ANDROID_ROOT/droid-local-repo/$DEVICE/$PKG/*.rpm
 mv RPMS/*.rpm $ANDROID_ROOT/droid-local-repo/$DEVICE/$PKG
